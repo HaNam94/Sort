@@ -6,12 +6,12 @@ public class BubbleSort {
         Scanner myScanner = new Scanner(System.in);
         int[] list = {8,6,34,22,23};
 
-        System.out.println("Your input lista; ");
+        System.out.println("Your input list: ");
         for (int i = 0; i < list.length; i++) {
             System.out.println(list[i] + "\t");
         }
         System.out.println();
-        System.out.println("Sort arrat");
+        System.out.println("Sort array");
         bubbleSort(list);
     }
 

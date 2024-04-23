@@ -11,14 +11,14 @@ public class SelectionSort {
         for (int i = 0; i < arr.length-1; i++) {
             int min = arr[i];
             int index = -1;
-            for (int j = i; j < arr.length ; j++) {
-                if (min > arr[i]){
+            for (int j = i; j < arr.length; j++) {
+                if(min > arr[j]) {
                     min = arr[j];
                     index = j;
                 }
             }
-            if (index != -1){
-                System.out.println("swap " + arr[i] + " and " + arr[index]);
+            if (index != -1) {
+                System.out.println("swap " + arr[i] + " and " + arr[index] );
                 int temp = arr[i];
                 arr[i] = arr[index];
                 arr[index] = temp;

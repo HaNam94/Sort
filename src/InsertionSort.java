@@ -14,11 +14,12 @@ public class InsertionSort {
             int j = i-1;
             for (; j >= 0 && temp < arr[j]; j--) {
                 System.out.println("swap " + arr[j+1] + " and " + arr[j]);
-                arr[j+1] = arr[i];
+                arr[j+1] = arr[j];
             }
             arr[j+1] = temp;
             System.out.println(Arrays.toString(arr));
         }
+
         System.out.println(Arrays.toString(arr));
     }
 }
